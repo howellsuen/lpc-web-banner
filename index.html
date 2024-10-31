@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LPC Insurance Brokers Limited - 安邦保險經紀有限公司</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="css/lpc-base.css">
+		<link rel="stylesheet" href="css/lpc-application.css">
+		<link rel="stylesheet" media="screen and (max-width: 980px)" href="css/lpc-mobile.css">
+		<script  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="  crossorigin="anonymous"></script>
+		<script>
+		var state = false;
+		$(document).ready(function() {
+			$('.lpc-lang-switch').click(function(event) {
+			event.stopPropagation();
+				if (state) {
+					state = false;
+					$(this).find('.material-symbols-outlined').removeClass('active').html('language');
+					$('.lpc-lang-switcher').hide('slow');
+				} else {
+					state = true;
+					$(this).find('.material-symbols-outlined').addClass('active').html('EN');
+					$('.lpc-lang-switcher').show('slow');
+				}
+			});
+			$('body').click(function() {
+				state = false;
+				$(this).find('.material-symbols-outlined').removeClass('active').html('language');
+				$('.lpc-lang-switcher').hide('slow');
+			});
+		})
+		</script>
+	</head>
+	<body>
+		<header class="lpc-display-container lpc-wide bgimg" id="home">
+			<div class="lpc-content lpc-display-middle lpc-text-white">
+				<img class="logo" src="images/lpc-logo.png">
+				<div class="lpc-lang-switch">
+					<a href="javascript:void(0)" class="material-symbols-outlined">language</a>
+					<div class="lpc-lang-switcher">
+						<a href="/lpc-uat/zh-hk/">繁</a>
+						<a href="/lpc-uat/zh-cn/">簡</a>
+					</div>
+				</div>
+				<h1 class="lpc-jumbo">We Ensure Excellent Insurance Service Tailored To Your Needs</h1>
+				<h3>We help you get the best coverage possible</h3>
+				<a href="javascript:void(0)" onclick="document.getElementById('reply').style.display='block'" class="lpc-button">Get Quote Now</a>
+			</div>
+		</header>
+		<div class="lpc-container lpc-padding-64" id="us">
+			<div class="lpc-content">
+				<h1 class="lpc-center lpc-card lpc-text-counter-green">
+					<div class="number">30+ <span class="lpc-xlarge">Years</span></div>
+					Insurance experience
+				</h1>
+				<h1 class="lpc-center lpc-card lpc-text-counter-orange">
+					<div class="number">300K+</div>
+					Effected Policies</b>
+				</h1>
+				<h1 class="lpc-center lpc-card lpc-text-counter-red">
+					<div class="number">10K+</div>
+					Served Clients</b>
+				</h1>
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 bgimg2">
+			<div class="lpc-content">
+				<div class="content-holder">
+					<h2 class="lpc-large"><b>About Us</b></h2>
+					To implement the business philosophy of “Liaison, Professional and Caring”<br>
+					LPC continuously aims to improve customer experience and satisfaction. We facilitate clear communication with customers through multiple technological channels to understand their ever-changing industries and markets. This enables us to better provide customers with tailored service, higher convenience, and flexible solutions that meet their needs.
+					<h2 class="lpc-medium"><b>Role of Broker</b></h2>
+					As insurance brokers, we are your trusted advisors who represent your best interests. We prioritize your perspective and circumstances to help you find and negotiate the most suitable coverage for your needs.
+				</div>
+				<img src="images/austin-tower.jpg">
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 lpc-center">
+			<div class="lpc-content">
+				<h1><b>Our Vision & Mission</b></h1>
+				<div class="lpc-center lpc-card2">
+					<img src="images/liaison-icon.png">
+					<p class="lpc-xlarge">Liaison</p>
+					Communication and mutual understanding shape our effective and proper management of our clients’ risks.
+				</div>
+				<div class="lpc-center lpc-card2">
+					<img src="images/professionalism-icon.png">
+					<p class="lpc-xlarge">Professionalism</p>
+					Our in-depth understanding of the insurance industry and experience with customer needs help our customers make informed choices.
+				</div>
+				<div class="lpc-center lpc-card2">
+					<img src="images/care-icon.png">
+					<p class="lpc-xlarge">Care</p>
+					We find suitable and beneficial solutions for our customers through our sincere and hard-working attitude.
+				</div>
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 bgimg3">
+			<div class="lpc-content">
+				<h1 class="lpc-center">Product and Services</h1>
+				<div class="lpc-row">
+					<div class="lpc-card3">
+						<h2>Commercial Line Insurance</h2>
+						<p>We provide the following insurance products to protect businesses and organizations against various risks and liabilities.</p>
+						<div class="swiper commercial-swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Contractors All Risk Insurance</div>
+									<img src="images/products/contractors-all-risk-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Cyber Risk Insurance</div>
+									<img src="images/products/cyber-risk-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Directors Officers Management Liability Insurance</div>
+									<img src="images/products/directors-officers-management-liability-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Office Business Package</div>
+									<img src="images/products/office-business-package.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Product Liability Insurance</div>
+									<img src="images/products/product-liability-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Professional Indemnity Insurance</div>
+									<img src="images/products/professional-indemnity-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Property All Risk Insurance</div>
+									<img src="images/products/property-all-risk-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Commercial<br>Public Liability Insurance</div>
+									<img src="images/products/public-liability-insurance.jpg">
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="lpc-card3">
+						<h2>Personal Line Insurance</h2>
+						<p>We provide the following insurance products to protect individuals and their personal belongings against various risks and liabilities.</p>
+						
+						<div class="swiper personal-swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Fire Insurance</div>
+									<img src="images/products/fire-insurance .jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Home Insurance</div>
+									<img src="images/products/home-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Medical Insurance</div>
+									<img src="images/products/medical-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Motor Insurance</div>
+									<img src="images/products/motor-insurance.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Personal Accident</div>
+									<img src="images/products/personal-accident.jpg">
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-slide-text">Individual<br>Travel Insurance</div>
+									<img src="images/products/travel-insurance.jpg">
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 bgimg4">
+			<div class="lpc-content">
+				<h1>Featured Product</h1>
+				<p>Apart from standard insurance products, we also collaborate with different insurers to customise insurance products. We understand that the market is constantly fluctuating, which gives rise to new risks, so we work out products that tackle these risks accordingly.</p>
+				<div class="lpc-card4">
+					<div class="text-content">
+						<h2 class="lpc-xlarge">Drone Insurance</h2>
+						<p>Communication and mutual understanding shape our effective and proper management of our clients’ risks.</p>
+						<a href="javascript:void(0)" onclick="document.getElementById('reply').style.display='block'" class="lpc-button">Get Quote Now</a>
+					</div>
+					<img src="images/featured-product-cyber-risk-insurance.jpg">
+				</div>
+				<div class="lpc-card4">
+					<img src="images/featured-product-drone-insurance.jpg">
+					<div class="text-content">
+						<h2 class="lpc-xlarge">Cyber Risk Insurance</h2>
+						<p>Our in-depth understanding of the insurance industry and experience with customer needs help our customers make informed choices.</p>
+						<a href="javascript:void(0)" onclick="document.getElementById('reply').style.display='block'" class="lpc-button">Get Quote Now</a>
+					</div>
+				</div>
+				<div class="lpc-card4">
+					<div class="text-content">
+						<h2 class="lpc-xlarge">New Owner Scheme</h2>
+						<p>We find suitable and beneficial solutions for our customers through our sincere and hard-working attitude.</p>
+						<a href="javascript:void(0)" onclick="document.getElementById('reply').style.display='block'" class="lpc-button">Get Quote Now</a>
+					</div>
+					<img src="images/featured-product-new-owner-scheme.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="lpc-container bgimg5">
+			<div class="lpc-content">
+				<div class="lpc-row">
+					<div class="lpc-card5">
+						<h2 class="lpc-large lpc-center"><b>Consultation</b></h2>
+						<p>We help clients understand their insurance needs and assess their risks to better recommend appropriate insurance coverage.</p>
+						<img src="images/1-consultation.png">
+					</div>
+					<div class="lpc-card5">
+						<h2 class="lpc-large lpc-center"><b>Policy Placing</b></h2>
+						<p>We use our knowledge and expertise to identify insurance policies that meet our clients’ needs.</p>
+						<img src="images/2-policy-pricing.png">
+					</div>
+					<div class="lpc-card5">
+						<h2 class="lpc-large lpc-center"><b>Corporate Training</b></h2>
+						<p>We provide ample training for our clients on insurance-related topics to equip them with knowledge on different insurance coverages and to help them understand the evolving risks associated with their industries. </p>
+						<img src="images/3-corporate-training.png">
+					</div>
+					<div class="lpc-card5">
+						<h2 class="lpc-large lpc-center"><b>Claim Service</b></h2>
+						<p>We assist clients in handling the claim process step-by-step. We act as our clients’ advocate to ensure they receive their entitled compensation.</p>
+						<img src="images/4-claim-service.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64">
+			<div class="lpc-content">
+				<h1>Corporate Training</h1>
+				<p>We design different training programs for our clients to understand the risks associated with their markets and the corresponding insurance coverage options that address these risks. We support our clients in navigating the complexities of insurance risk and equip them with knowledge and skills to select the most suitable plan.</p>
+				<div class="swiper2 corporate-swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img src="images/corporate/training_01.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_02.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_03.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_04.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_05.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_06.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_11.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_12.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_13.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_14.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_15.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_16.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/corporate/training_17.jpg">
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 lpc-center bgimg6">
+			<h1>Business Partners</h1>
+			<div class="lpc-content">
+				<img src="images/business-partners-icons.png">
+			</div>
+		</div>
+		<div class="lpc-container lpc-padding-64 contact-us">
+			<div class="lpc-content">
+				<div class="lpc-large float-left"><b>Contact us if you have any inquiries</b></div>
+				<a href="javascript:void(0)" onclick="document.getElementById('reply').style.display='block'" class="lpc-button float-right">Contact Us</a>
+			</div>
+		</div>
+		</div>
+		<!-- Footer -->
+		<div class="lpc-container lpc-padding-16 lpc-center bgimg7">
+			<div class="lpc-content">
+				<img src="images/lpc-logo-mini.png" class="float-left">
+				<div class="contact-item">
+					<i class="material-symbols-outlined">call</i>
+					<div>Call Us</div>
+					<div class="value">+852 2375 3456</div>
+				</div>
+				<div class="contact-item">
+					<i class="material-symbols-outlined">mail</i>
+					<div>Mail Us</div>
+					<div class="value">info@lpcinsbrokers.com</div>
+				</div>
+				<div class="contact-item">
+					<i class="material-symbols-outlined">location_on</i>
+					<div>Location</div>
+					<div class="value">Address: Room 912, 9/F, Austin<br>Tower, 22-26A Austin Avenue, Tsim Sha<br>Tsui, Kowloon.</div>
+				</div>
+			</div>
+			<p class="lpc-small">2023 Copyright © LPC Insurance Brokers Limited</p>
+		</div>
+		<!-- RSVP modal -->
+		<div id="reply" class="lpc-modal">
+			<div class="lpc-modal-content lpc-card-4 lpc-animate-zoom" style="padding:32px; width:1280px">
+				<button onclick="document.getElementById('reply').style.display='none'" type="button" class="lpc-button float-right material-symbols-outlined">close</button>
+				<div class="lpc-container lpc-white lpc-center">
+					<h1 class="lpc-wide"><b>Contact Us</b></h1>
+					<p class="">Any question or remarks? Just write us a message!</p>
+					<div class="contact-intro">
+						<h2 class="lpc-large">Contact Information</h2>
+						<p>Getting in touch with us is easy</p>
+						<div class="contact-item">
+							<i class="material-symbols-outlined">phone_in_talk</i>
+							<div>+852 2375 3456</div>
+						</div>
+						<div class="contact-item">
+							<i class="material-symbols-outlined">mail</i>
+							<div>info@lpcinsbrokers.com</div>
+						</div>
+						<div class="contact-item">
+							<i class="material-symbols-outlined">location_on</i>
+							<div>Address: Room 912, 9/F, Austin<br>Tower, 22-26A Austin Avenue, Tsim Sha<br>Tsui, Kowloon.</div>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form>
+							<div class="input-box">
+								<input class="lpc-input" type="text" name="name" required="">
+								<label>First Name</label>
+							</div>
+							<div class="input-box">
+								<input class="lpc-input" type="text" name="name" required="">
+								<label>Last Name</label>
+							</div>
+							<div class="input-box">
+								<input class="lpc-input" type="text" name="name" required="">
+								<label>Email</label>
+							</div>
+							<div class="input-box">
+								<input class="lpc-input" type="text" name="name" required="">
+								<label>Phone Number</label>
+							</div>
+							<div class="input-box select-box">
+								<p>Select Subject?</p>
+								<div>
+									<label>General Inquiry<input type="radio" name="subject"></label>
+								</div>
+								<div>
+									<label>Product Inquiry<input type="radio" name="subject"></label>
+								</div>
+								<div>
+									<label>Business Collaboration<input type="radio" name="subject"></label>
+								</div>
+							</div>
+							<div class="input-box input-box2">
+								<input class="lpc-input" type="text" name="name" required="">
+								<label>Message</label>
+							</div>
+							<div class="lpc-row">
+								<button onclick="document.getElementById('reply').style.display='none'" type="button" class="lpc-button float-right">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script>
+		const swiper = new Swiper('.swiper', {
+			loop:true,
+			effect: "coverflow",
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 20,
+				depth: 100,
+				modifier: 2,
+				slideShadows: true,
+			},
+			navigation:{
+				nextEl:".swiper-button-next",
+				prevEl:".swiper-button-prev"
+			},
+		});
+		
+		const swiper2 = new Swiper('.swiper2', {
+			loop:true,
+			effect: "coverflow",
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 20,
+				depth: 50,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			navigation:{
+				nextEl:".swiper-button-next",
+				prevEl:".swiper-button-prev"
+			},
+		});
+		</script>
+	</body>
+</html>
